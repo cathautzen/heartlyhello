@@ -212,11 +212,11 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="step-box bg-orange rounded-5">
+                <div class="step-box bg-darklilla rounded-5">
                 </div>
             </div>
             <div class="col-3">
-                <div class="step-box bg-darklilla rounded-5">
+                <div class="step-box bg-orange rounded-5">
                 </div>
             </div>
         </div>
@@ -240,17 +240,32 @@
 
     <form>
         <div class="form-group">
-            <div class="col text-center mt-5">
+            <div class="col text-center mt-3">
                 <h5>Vælg dine interesser</h5>
             </div>
-            <div class="pill-checkbox">
+            <div class="pill-checkbox mt-3">
                 <input type="checkbox" id="interest1" name="interest1" class="hidden-checkbox">
-                <label for="interest1" class="pill">Interesse 1</label>
-
+                <label for="interest1" class="pill">Fiskeri</label>
                 <input type="checkbox" id="interest2" name="interest2" class="hidden-checkbox">
-                <label for="interest2" class="pill">Interesse 2</label>
-
-                <!-- Tilføj flere valgmuligheder på samme måde -->
+                <label for="interest2" class="pill">Gaming</label>
+                <input type="checkbox" id="interest3" name="interest3" class="hidden-checkbox">
+                <label for="interest3" class="pill">Sport</label>
+                <input type="checkbox" id="interest4" name="interest4" class="hidden-checkbox">
+                <label for="interest4" class="pill">Kreativitet</label>
+                <input type="checkbox" id="interest5" name="interest5" class="hidden-checkbox">
+                <label for="interest5" class="pill">Madlavning</label>
+                <input type="checkbox" id="interest6" name="interest6" class="hidden-checkbox">
+                <label for="interest6" class="pill">Rejse</label>
+                <input type="checkbox" id="interest7" name="interest7" class="hidden-checkbox">
+                <label for="interest7" class="pill">Bøger</label>
+                <input type="checkbox" id="interest8" name="interest8" class="hidden-checkbox">
+                <label for="interest8" class="pill">Fitness</label>
+                <input type="checkbox" id="interest9" name="interest9" class="hidden-checkbox">
+                <label for="interest9" class="pill">Kæledyr</label>
+                <input type="checkbox" id="interest10" name="interest10" class="hidden-checkbox">
+                <label for="interest10" class="pill">Indretning</label>
+                <input type="checkbox" id="interest11" name="interest11" class="hidden-checkbox">
+                <label for="interest11" class="pill">Bylivet</label>
             </div>
         </div>
     </form>

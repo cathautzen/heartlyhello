@@ -78,8 +78,21 @@ p {
 	display: none;
 }
 
+.hidden-checkbox + label.pill {
+	background-color: #edd8ad;
+	color: black;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+}
+
 .hidden-checkbox:checked + label.pill {
-	background-color: #007bff; /* Ændr farven til ønsket farve */
-	color: white;
-	border-color: #007bff;
+	background-color: #95cdcc;
+	color: black;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+}
+
+/* Baggrundsfarve til velkommen side efter oprettelse */
+.op-velkommen {
+	background-color: #c3a9d8;
 }
