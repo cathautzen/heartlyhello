@@ -23,8 +23,9 @@
 
 <div class="container">
     <div class="row">
-        <div class="col text-center mt-5">
-            <img class="justify-content-center" style="width: 150px;" src="images/logo_HeartlyHello.png" alt="HeartlyHello Logo" >
+        <div class="col text-center mt-5 d-flex justify-content-center align-items-center">
+            <div class="circle"></div>
+                <img class="justify-content-center" style="width: 150px; position: absolute" src="images/logo_HeartlyHello.png" alt="HeartlyHello Logo" >
         </div>
     </div>
 </div>
@@ -56,7 +57,7 @@
 <div class="container">
     <div class="row">
         <div class="col text-center mt-5">
-            <h1 class="text-white">Velkommen!</h1>
+            <h1 class="text-white" style="font-size: 40px">Velkommen!</h1>
         </div>
     </div>
 </div>
@@ -64,7 +65,7 @@
 <div class="container">
     <div class="row">
         <div class="col text-center mt-5">
-            <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Udforsk</button>
+            <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5 text-center" style="font-size: 35px">Udforsk</button>
         </div>
     </div>
 </div>

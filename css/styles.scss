@@ -96,3 +96,13 @@ p {
 .op-velkommen {
 	background-color: #c3a9d8;
 }
+
+.circle {
+	width: 150px; /* Juster størrelsen af cirklen efter behov */
+	height: 150px; /* Juster størrelsen af cirklen efter behov */
+	border-radius: 50%; /* Gør elementet til en cirkel */
+	background-color: white; /* Baggrundsfarven på cirklen */
+	filter: blur(15px); /* Tilføj blur-effekten */
+	z-index: 0; /* Sørg for, at cirklen er bag billedet */
+
+}
