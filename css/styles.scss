@@ -10,7 +10,11 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"farve": $cyan-400,
+	"orange": #FF8C0F,
+	"tyrkis": #95cdcc,
+	"darklilla": #b84d9b,
+	"beige": #edd8ad,
+	"lightlilla": #c3a9d8,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -18,3 +22,64 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Orange knap til opretteelsesiderne */
+.button-1 {
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.step-box {
+	height: 10px;
+}
+
+.form-control {
+	background-color: #E8E8E8;
+	font-size: 20px;
+	border-radius: 0;
+}
+
+.form-check-input {
+	border: 1px solid #888888;
+	border-radius: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.input-group-text {
+	border: none;
+	color: #b84d9b;
+}
+
+/* Stil for de valgbare piller */
+.pill-checkbox {
+	display: inline-block;
+}
+
+.pill {
+	display: inline-block;
+	padding: 0.4em 0.6em;
+	margin: 0.2em;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 50px;
+}
+
+/* Stil for markerede piller */
+.hidden-checkbox {
+	display: none;
+}
+
+.hidden-checkbox:checked + label.pill {
+	background-color: #007bff; /* Ændr farven til ønsket farve */
+	color: white;
+	border-color: #007bff;
+}
