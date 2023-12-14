@@ -256,7 +256,7 @@ VALUES(
                                 hvordan vi bruger <b>cookies</b> og
                                 lignende teknologi i vores <b>politik
                                     om cookies.</b></label>
-                            <div class="invalid-feedback">Example invalid feedback text</div>
+                            <div class="invalid-feedback">Du skal acceptere betingelserne for at kunne fortsætte.</div>
                         </div>
                         <div class="container">
                             <div class="row">
