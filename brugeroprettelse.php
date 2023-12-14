@@ -245,7 +245,8 @@ VALUES(
                             <input type="email" class="form-control" id="inputEmail" placeholder="Indtast din email" name="data[email]">
                         </div>
                         <div class="form-check mt-4">
-                            <input type="checkbox" class="form-check-input" id="policyCheckbox" name="data[policy]">
+
+                            <input type="checkbox" class="form-check-input" id="policyCheckbox" name="data[policy]" required>
                             <label class="form-check-label" for="policyCheckbox">
                                 Når du opretter en profil, accepterer
                                 du vores <b>vilkår</b>. Læs om, hvordan vi
@@ -255,6 +256,7 @@ VALUES(
                                 hvordan vi bruger <b>cookies</b> og
                                 lignende teknologi i vores <b>politik
                                     om cookies.</b></label>
+                            <div class="invalid-feedback">Example invalid feedback text</div>
                         </div>
                         <div class="container">
                             <div class="row">
