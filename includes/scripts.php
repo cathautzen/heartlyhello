@@ -1,0 +1,2 @@
+<script src="https://kit.fontawesome.com/645a3a1c42.js" crossorigin="anonymous"></script> <!--Fontawesome ikoner-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!-- Forbinder til Bootstrap -->
