@@ -31,7 +31,11 @@
 <div class="container">
     <div class="row">
         <div class="col text-center mt-5">
-            <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Kom hurtigt igang</button>
+            <a href="brugeroprettelse.php">
+                <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">
+                    Kom hurtigt igang
+                </button>
+            </a>
         </div>
     </div>
 </div>

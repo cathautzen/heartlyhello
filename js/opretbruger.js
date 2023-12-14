@@ -13,6 +13,6 @@ step2button.addEventListener('click', function () {
 });
 
 // KNAP > EVENTET > NÅR DU KLIKKER > FUNKTION > SIGER BROWSER GÅ TIL (LINK)
-step3button.addEventListener('click', function () {
-    window.location.href = "oprettelseslut.php";
-});
+// step3button.addEventListener('click', function () {
+//     window.location.href = "oprettelseslut.php";
+// });
