@@ -21,7 +21,7 @@
 
 <body>
 
-<section> <!--Første oprettelsesside-->
+<section id="step1"> <!--Første oprettelsesside-->
 <div class="container">
     <div class="row">
         <div class="col text-center mt-5">
@@ -83,7 +83,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center mt-5">
-                                <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Fortsæt</button>
+                                <button id="step1button" type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Fortsæt</button>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
 </div>
 </section>
 
-<section> <!--Anden oprettelsesside-->
+<section id="step2" class="d-none"> <!--Anden oprettelsesside-->
     <div class="container">
         <div class="row">
             <div class="col text-center mt-5">
@@ -185,7 +185,7 @@
                 <div class="container">
                         <div class="row">
                             <div class="col text-center mt-5">
-                                <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Fortsæt</button>
+                                <button id="step2button" type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Fortsæt</button>
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
     </div>
 </section>
 
-<section> <!--Tredje oprettelsesside-->
+<section id="step3" class="d-none"> <!--Tredje oprettelsesside-->
     <div class="container">
         <div class="row">
             <div class="col text-center mt-5">
@@ -273,7 +273,7 @@
     <div class="container">
                 <div class="row">
                     <div class="col text-center mt-5">
-                        <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Fortsæt</button>
+                        <button id="step3button" type="button" class="button-1 btn btn-orange w-100 text-white rounded-5">Fortsæt</button>
                     </div>
                 </div>
             </div>
@@ -287,7 +287,10 @@
 
 
 <script src="https://kit.fontawesome.com/645a3a1c42.js" crossorigin="anonymous"></script> <!--Fontawesome ikoner-->
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!-- Forbinder til Bootstrap -->
+<script src="js/opretbruger.js"></script> <!-- Forbinder javascriptet til siden - Opret bruger  -->
+
+
 </body>
 </html>
 
