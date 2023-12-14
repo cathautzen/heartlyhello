@@ -97,6 +97,7 @@ p {
 	background-color: #c3a9d8;
 }
 
+/* Den hvide cirkel bag vores logo */
 .circle {
 	width: 150px; /* Juster størrelsen af cirklen efter behov */
 	height: 150px; /* Juster størrelsen af cirklen efter behov */
@@ -105,4 +106,27 @@ p {
 	filter: blur(15px); /* Tilføj blur-effekten */
 	z-index: 0; /* Sørg for, at cirklen er bag billedet */
 
+}
+
+/* Den Lilla cirkel bag vores logo på profilside */
+.cirkel {
+	position: absolute;
+	top: 0;
+	left: -250px;
+	transform: translate(0, -46%);
+	width: 174%;
+	height: 65%;
+	background-color: #c3a9d8;
+	border-radius: 100%;
+	z-index: -1; /* Sørg for, at cirklen er bag billedet */
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	width: auto;
+}
+
+.search-icon {
+	margin-left: 10px;
 }

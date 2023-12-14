@@ -1,6 +1,5 @@
-<!-- Denne fil gør det muligt at snakke med databasen -->
 <?php
-
+// Denne fil gør det muligt at snakke med databasen
 class db {
     private $dbCon;
     private $prepare_result;

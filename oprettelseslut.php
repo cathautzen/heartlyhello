@@ -30,7 +30,7 @@
                     src="https://cdn.lordicon.com/fkmafinl.json"
                     trigger="loop"
                     delay="2000"
-                    style="width:200px;height:200px">
+                    style="width:150px;height:150px">
             </lord-icon>
         </div>
     </div>
@@ -40,6 +40,7 @@
     <div class="row">
         <div class="col text-center mt-5">
             <h1 class="text-white" style="font-size: 40px">Velkommen!</h1>
+            <h3 class="text-white">Vi har sendt dig en e-mail med en midlertidig adgangskode, som du kan ændre senere.</h3>
         </div>
     </div>
 </div>
@@ -47,7 +48,9 @@
 <div class="container">
     <div class="row">
         <div class="col text-center mt-5">
+            <a href="profiler.php">
             <button type="button" class="button-1 btn btn-orange w-100 text-white rounded-5 text-center" style="font-size: 35px">Udforsk</button>
+            </a>
         </div>
     </div>
 </div>
