@@ -1,11 +1,15 @@
 <?php
 require "settings/init.php";
+// Init filen hjælper med at forbinde til databsen
 
+// Her tjekker vi om der er noget data i POST (Method=post i oprettelsesformularen). Hvis der er noget, skal den køre denne 'if'.
 if(!empty($_POST["data"])){
     $data = $_POST["data"];
 
+// Opdeler mellem elementer (fx interesse | interesse ).
     $delimeter = "|";
 
+// Denne section opbygger en streng til databasen med de valgte elementer, opdelt med delimeteren (hvad brugeren søger).
     $seeking = "";
     if(isset($data["lookingFor1"])){
         $seeking = "Tætte venskaber";
@@ -51,6 +55,7 @@ if(!empty($_POST["data"])){
         }
     }
 
+// Denne section opbygger en streng til databasen med de valgte elementer, opdelt med delimeteren ( deres interesser).
     $interests = "";
     if(isset($data["interest1"])){
         $interests = "Fiskeri";
@@ -156,6 +161,7 @@ if(!empty($_POST["data"])){
         }
     }
 
+// Dette sender vi til databasen. Navene i databasen vs. navnene i koden. Så de hænger sammen.
     $sql = "INSERT INTO brugere (
                        Name,
                        Phone,
@@ -175,6 +181,7 @@ VALUES(
        :Interests)
        ";
 
+// Her binder vi værdierne brugerne har indtastet med de navne vi har givet dem.
     $bind = [":Name" => $data["name"],
         ":Phone" => $data["phone"],
         ":Mail" => $data["email"],
@@ -184,8 +191,10 @@ VALUES(
         ":Interests" => $interests
     ];
 
+ // Her sender vi det til databasen.
     $db->sql($sql, $bind, false);
 
+// Når oprettelsen af er slut, fortæller vi browseren, hvor vi skal gå hen. 
     header("Location: oprettelseslut.php");
     exit;
 }

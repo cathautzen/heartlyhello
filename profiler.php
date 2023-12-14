@@ -1,3 +1,10 @@
+<?php
+require "settings/init.php";
+
+$sql = "select Name, Interests from brugere";
+$users = $db->sql($sql);
+?>
+
 <?php include "includes/head.php"
 ?>
 
@@ -33,51 +40,29 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Navn</h5>
-                    <p class="card-text">Beskrivelse</p>
-                    <a href="#" class="btn btn-orange">Besøg Profil</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Navn</h5>
-                    <p class="card-text">Beskrivelse</p>
-                    <a href="#" class="btn btn-orange">Besøg Profil</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-6">
 
+<div class="container">
+    <div class="row my-5">
+    <?php
+    foreach ($users as $user){
+    ?>
+        <div class="col-6 mt-2">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Navn</h5>
-                    <p class="card-text">Beskrivelse</p>
+                    <h5 class="card-title"><?php echo $user->Name ?></h5>
+                    <p class="card-text">Mine interesser er: <?php echo $user->Interests ?></p>
                     <a href="#" class="btn btn-orange">Besøg Profil</a>
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Navn</h5>
-                    <p class="card-text">Beskrivelse</p>
-                    <a href="#" class="btn btn-orange">Besøg Profil</a>
-                </div>
-            </div>
-        </div>
+<?php
+}
+?>
     </div>
 </div>
 
 
+<div class="footer-padding"></div>
 
 <footer class="container fixed-bottom" style="border-top: 1px solid #ccc">
     <div class="row">
@@ -92,7 +77,7 @@
 </footer>
 
 
-<script src="https://kit.fontawesome.com/645a3a1c42.js" crossorigin="anonymous"></script> <!--Fontawesome ikoner-->
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<?php include "includes/scripts.php"
+?>
 </body>
 </html>
