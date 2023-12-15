@@ -1,6 +1,7 @@
 <?php
 require "settings/init.php";
 
+// Denne kode henter brugernavne og interesser fra databasetabellen "brugere".
 $sql = "select Name, Interests from brugere";
 $users = $db->sql($sql);
 ?>

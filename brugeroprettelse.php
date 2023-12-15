@@ -194,7 +194,7 @@ VALUES(
  // Her sender vi det til databasen.
     $db->sql($sql, $bind, false);
 
-// Når oprettelsen af er slut, fortæller vi browseren, hvor vi skal gå hen. 
+// Når oprettelsen af er slut, fortæller vi browseren, hvor vi skal gå hen.
     header("Location: oprettelseslut.php");
     exit;
 }

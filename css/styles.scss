@@ -24,6 +24,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
+/* Overskrifter */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -123,11 +124,12 @@ p {
 	margin-left: 10px;
 }
 
-.footer-padding {
-	height: 60px;
-}
-
+/* footer menuen */
 footer {
 	background-color: white;
 	height: 60px;
 }
+
+.footer-padding {
+	 height: 60px;
+ }
